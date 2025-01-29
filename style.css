@@ -5,8 +5,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    position: relative; /* Needed for absolutely positioned elements */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
@@ -16,11 +19,6 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    
-    position: absolute; /* Absolutely position the container */
-    top: 50%; /* Vertically center it */
-    left: 50%; /* Horizontally center it */
-    transform: translate(-50%, -50%); /* Adjust the position to truly center it */
 }
 
 img {
@@ -100,11 +98,10 @@ header {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     text-align: center;
     background-color: #0033a0;
     color: #ffffff;
     padding: 10px;
+    margin-top: auto; /* Menjamin footer berada di bawah */
 }
