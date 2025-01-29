@@ -22,11 +22,3 @@ body {
     text-align: center;
     margin-bottom: auto; /* This ensures content above the footer grows as needed */
 }
-
-footer {
-    margin-top: auto; /* Push footer to the bottom */
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
-    padding: 10px;
-}
