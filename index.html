@@ -7,79 +7,122 @@
     <title>Deutsch.my.id</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
         body {
             font-family: "Calibri Light", Calibri, sans-serif;
             background-color: #0033a0;
             color: #ffffff;
             line-height: 1.6;
             margin: 0;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding: 20px;
         }
+
+        /* Container Styling */
         .container {
             max-width: 600px;
-            width: 90%;
+            width: 100%;
             padding: 30px;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 20px;
-        }
-        h2, h3 {
-            color: #ffffff;
             text-align: center;
         }
+
+        /* Headings */
+        h2, h3 {
+            color: #ffffff;
+        }
+
+        /* Horizontal Rules */
         hr {
             border-color: rgba(255, 255, 255, 0.3);
             margin: 20px 0;
         }
+
+        /* Links */
         a {
             color: #ffffff;
             text-decoration: none;
             border-bottom: 1px dotted #ffffff;
         }
+
         a:hover {
             border-bottom: 1px solid #ffffff;
         }
-        .centered {
-            text-align: center;
-        }
+
+        /* Button Styling */
         .link-button {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             padding: 10px 20px;
             background-color: #ffffff;
             color: #0033a0;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
             margin-top: 20px;
-            border: none;
+            transition: all 0.3s ease;
         }
+
         .link-button:hover {
             background-color: #f0f0f0;
         }
+
+        /* Arrow Circle */
+        .arrow-circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0033a0;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .link-button:hover .arrow-circle {
+            transform: translateX(5px);
+        }
+
+        /* Centered Section */
+        .centered {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+        }
     </style>
-    <!-- Link to external responsive stylesheet -->
-    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <div class="container">
         <h2>Hallo, Everyone!</h2>
-        <p class="centered" style="text-align: left;">
+        <p style="text-align: left;">
             I'm Yeri,<br>
             the founder of DEUTSCH.MY.ID<br>
             Today marks the beginning of an exciting journey,<br>
             I'm thrilled to guide you on this voyage in my German Class!
         </p>
-        <p class="centered" style="text-align: left;">Prost,</p>
-        <p class="centered" style="text-align: left;">Yeri</p>
+        <p style="text-align: left;">Prost,</p>
+        <p style="text-align: left;">Yeri</p>
 
         <hr>
 
@@ -119,19 +162,21 @@
             <ul>
                 <li>✅ 30 Menit Free Trial Session</li>
                 <li>✅ Free 6X Pertemuan Kelas Persiapan Ujian Sertifikasi Bahasa Jerman</li>
-            </p>
-<section class="centered">
-    <p>Send a Message Anytime!</p>
-    <p>
-        <a href="contact.html" class="link-button">
-            Contact <span class="arrow-circle">→</span>
-        </a>
-    </p>
-</section>
+            </ul>
+        </section>
 
-<footer class="centered">
-    <p>&copy; 2025 DEUTSCH.MY.ID</p>
-</footer>
+        <section class="centered">
+            <p>Send a Message Anytime!</p>
+            <p>
+                <a href="contact.html" class="link-button">
+                    Contact <span class="arrow-circle">→</span>
+                </a>
+            </p>
+        </section>
+
+        <footer class="centered">
+            <p>&copy; 2025 DEUTSCH.MY.ID</p>
+        </footer>
     </div>
 </body>
 </html>
