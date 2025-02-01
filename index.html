@@ -1,65 +1,154 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Deutsch.my.id - Learn German with Yeriansen, an experienced German linguist.">
-  <title>Deutsch.my.id</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- Link your CSS file if it's external -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deutsch.my.id - Learn German with Yeriansen, an experienced German linguist.">
+    <title>Deutsch.my.id</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Calibri Light", Calibri, sans-serif;
+            background-color: #0033a0;
+            color: #ffffff;
+            line-height: 1.8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h2, h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        hr {
+            border-color: rgba(255, 255, 255, 0.3);
+            margin: 20px 0;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px dotted #ffffff;
+            transition: border-bottom 0.3s ease;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #0033a0;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .arrow-circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0033a0;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .link-button:hover .arrow-circle {
+            transform: translateX(5px);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-  <!-- Advanced Sticky Header -->
-  <header>
-    <div class="header-container">
-      <a href="index.html" class="header-logo">Deutsch.my.id</a>
-      <nav class="header-nav">
-        <a href="profil_pengajar.html">Profil Pengajar</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <!-- Optional: A toggle button for mobile devices -->
-      <div class="menu-toggle">☰</div>
+    <div class="container">
+        <h2 class="text-center">Hallo, Everyone!</h2>
+        <p>I'm Yeri,<br>the founder of DEUTSCH.MY.ID<br>Today marks the beginning of an exciting journey,<br>I'm thrilled to guide you on this voyage in my German Class!</p>
+        <p>Prost,</p>
+        <p>Yeri</p>
+        
+        <hr>
+        
+        <!-- "Tentang Pengajar" section has been removed -->
+        
+        <hr>
+        
+        <h3 class="text-center">Mengapa Belajar Bahasa Jerman di DEUTSCH.MY.ID</h3>
+        <p>✅ Pengajar merawat perkembangan bahasa Anda dengan detail</p>
+        <p>✅ Learning Environment: Communicative Problem-Solving</p>
+        <p>✅ Add-on Formula sesuai dengan karakteristik pembelajar*</p>
+        <p><em>*Setiap peserta belajar memiliki karakter, daya tangkap serta gaya belajar yang berbeda.<br>
+        Add-on ini berbeda antara satu dengan yang lain, dan pembelajaran disesuaikan dengan kebutuhan serta tujuan pribadi Anda.</em></p>
+        
+        <hr>
+        
+        <h3 class="text-center">OPEN! 2 Kuota Online Private 1-on-1 by Yeriansen</h3>
+        <p>✅ 30 Menit Free Trial Session</p>
+        <p>✅ Free 6X Pertemuan Kelas Persiapan Ujian Sertifikasi Bahasa Jerman</p>
+        
+        <hr>
+    
+        <section style="display: flex; gap: 10px; align-items: center; justify-content: center; text-align: center; flex-wrap: wrap;">
+            <a href="profil_pengajar.html" class="link-button">
+                Profil Pengajar <span class="arrow-circle">→</span>
+            </a>
+            <a href="contact.html" class="link-button">
+                Contact <span class="arrow-circle">→</span>
+            </a>
+        </section>
+        
+        <hr>
     </div>
-  </header>
-
-  <!-- Main Content Container -->
-  <div class="container">
-    <h2 class="text-center">Hallo, Everyone!</h2>
-    <p>I'm Yeri,<br>the founder of DEUTSCH.MY.ID<br>Today marks the beginning of an exciting journey,<br>I'm thrilled to guide you on this voyage in my German Class!</p>
-    <p>Prost,</p>
-    <p>Yeri</p>
-    <hr>
-    <h3 class="text-center">Mengapa Belajar Bahasa Jerman di DEUTSCH.MY.ID</h3>
-    <p>✅ Pengajar merawat perkembangan bahasa Anda dengan detail</p>
-    <p>✅ Learning Environment: Communicative Problem-Solving</p>
-    <p>✅ Add-on Formula sesuai dengan karakteristik pembelajar*</p>
-    <p><em>*Setiap peserta belajar memiliki karakter, daya tangkap serta gaya belajar yang berbeda.<br>
-      Add-on ini berbeda antara satu dengan yang lain, dan pembelajaran disesuaikan dengan kebutuhan serta tujuan pribadi Anda.</em></p>
-    <hr>
-    <h3 class="text-center">OPEN! 2 Kuota Online Private 1-on-1 by Yeriansen</h3>
-    <p>✅ 30 Menit Free Trial Session</p>
-    <p>✅ Free 6X Pertemuan Kelas Persiapan Ujian Sertifikasi Bahasa Jerman</p>
-    <hr>
-    <section style="display: flex; gap: 10px; align-items: center; justify-content: center; text-align: center; flex-wrap: wrap;">
-      <a href="profil_pengajar.html" class="link-button">
-        Profil Pengajar <span class="arrow-circle">→</span>
-      </a>
-      <a href="contact.html" class="link-button">
-        Contact <span class="arrow-circle">→</span>
-      </a>
-    </section>
-    <hr>
-  </div>
-  
-  <!-- Optional: Script to handle the mobile menu toggle -->
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.header-nav');
-
-    menuToggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
